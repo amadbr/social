@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Hidden Link</title>
+<style>
+    .container {
+        position: relative;
+        display: inline-block;
+    }
+    .image {
+        display: block;
+        width: 100%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .link {
+        position: absolute;
+        top: 51.5%;
+        left: 29%;
+        font-size: 20px;
+        transform: translate(-20%, -50%);
+        opacity: 1; /* Hide the link */
+        /* Additional styling for the link can be added here */
+    }
+    .container:hover .link {
+        opacity: 1; /* Show the link on hover */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="instagram/businees_image/page5.jpg" alt="Your Image" class="image">
+    <a href="https://yourlink.com" class="link">Visit Website</a>
+</div>
+
+</body>
+</html>

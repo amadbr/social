@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      .image-list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-item {
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0.3px 0.5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 1000px; /* Limit the maximum width of the image container */
+        margin: 10px auto; /* Center the image container */
+      }
+
+      .image-item img {
+        width: 100%; /* Make the image fill the container */
+        height: auto;
+        border-radius: 10px; /* Add a smooth transition effect */
+      }
+
+      /* Image 2 */
+      .container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .image {
+        display: block;
+        width: 100%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      /* Link 1 */
+      .link {
+        position: absolute;
+        top: 43%;
+        left: 15%;
+        font-size: 18px;
+        transform: translate(-20%, -50%);
+        opacity: 0; /* Hide the link */
+        /* Additional styling for the link can be added here */
+      }
+      .container:hover .link {
+        opacity: 0; /* Show the link on hover */
+      }
+
+      /* Link 2 */
+      .link2 {
+        position: absolute;
+        top: 53%;
+        left: 25%;
+        font-size: 16px;
+        transform: translate(-20%, -50%);
+        opacity: 0; /* Hide the link */
+        /* Additional styling for the link can be added here */
+      }
+      .container:hover .link2 {
+        opacity: 0; /* Show the link on hover */
+      }
+
+      /* Link 3 */
+      .link3 {
+        position: absolute;
+        top: 86%;
+        left: 25%;
+        font-size: 16px;
+        transform: translate(-20%, -50%);
+        opacity: 0; /* Hide the link */
+        /* Additional styling for the link can be added here */
+      }
+      .container:hover .link3 {
+        opacity: 0; /* Show the link on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="image-list">
+
+      <li class="image-item">
+        <img src="chat_image/page1.jpg" alt="Image 1" />
+      </li>
+
+      <li class="image-item">
+        <img src="chat_image/page2.jpg" alt="Image 1" />
+      </li>
+
+      <li class="image-item">
+        <img src="chat_image/page3.jpg" alt="Image 1" />
+      </li>
+
+      <li class="image-item">
+        <img src="chat_image/page4.jpg" alt="Image 1" />
+      </li>
+
+      <li class="image-item">
+        <img src="chat_image/page5.jpg" alt="Image 1" />
+      </li>
+
+     
+      
+      <!-- Add more image items as needed -->
+    </ul>
+  </body>
+</html>
