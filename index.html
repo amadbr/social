@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Media</title>
-    <style>
-      body {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
 
-      .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-      }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .card img {
+      display: block;
+      margin: 0 auto; /* Center the image horizontally */
+      width: 70%;
+      padding: 10px;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card .title {
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .card .description {
+      padding: 10px;
+      text-align: center;
+      color: #666;
+    }
+
+    /* Add hover effect to cards */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Remove default link styles */
+    .card-container a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contact-heading {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      border: 2px solid #333;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-links a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
       .card {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 10px;
-        overflow: hidden;
-        width: 300px;
+        width: 90%;
       }
-
-      .card img {
-        display: block;
-        margin: 0 auto; /* Center the image horizontally */
-        width: 70%;
-        padding: 10px;
-        height: auto;
-        border-radius: 10px 10px 0 0;
-      }
-
-      .card .title {
-        padding: 10px;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      .card .description {
-        padding: 10px;
-        text-align: center;
-      }
-
-      /* Add hover effect to cards */
-      .card:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-      }
-
-      /* Remove default link styles */
-      .card-container a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      h4,h1 {
-        text-align: center;
-      }
-      a{
-        color: rgb(63, 63, 63);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="scrollable-content">
-      
-      <div class="card-container">
-        <!-- Wrap each card in an anchor tag with href attribute set to the URL of the destination page -->
-        <a href="pages/instagram_page.html" class="card">
-          <img src="images/instagram.png" alt="Instagram" />
-          <div class="title">Instagram</div>
-          <div class="description">Amed Abdulhameed </div>
-        </a>
-        <a href="pages/telegram_page.html" class="card">
-          <img src="images/telegram.png" alt="Telegram" />
-          <div class="title">Telegram</div>
-          <div class="description"></div>
-        </a>
-        <a href="pages/whatsapp_page.html" class="card">
-          <img src="images/whatsapp.png" alt="WhatsApp" />
-          <div class="title">WhatsApp</div>
-          <div class="description">Ahmed Kamil</div>
-        </a>
-        <!-- Repeat more cards here if needed -->
-      </div>
-      <h1>Contact us</h1>
-      <a href="https://www.instagram.com/amed_berzinar/">
-        <h4>Amed Abdullhameed</h4>
-      </a>
-      <a href="https://www.instagram.com/ahmed_bibavay/">
-        <h4>Ahmed Kamil</h4>
-      </a>
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card-container">
+    <!-- Wrap each card in an anchor tag with href attribute set to the URL of the destination page -->
+    <a href="pages/instagram_page.html" class="card">
+      <img src="images/instagram.png" alt="Instagram" />
+      <div class="title">Instagram</div>
+      <div class="description">Amed Abdulhameed </div>
+    </a>
+    <a href="pages/telegram_page.html" class="card">
+      <img src="images/telegram.png" alt="Telegram" />
+      <div class="title">Telegram</div>
+      <div class="description"></div>
+    </a>
+    <a href="pages/whatsapp_page.html" class="card">
+      <img src="images/whatsapp.png" alt="WhatsApp" />
+      <div class="title">WhatsApp</div>
+      <div class="description">Ahmed Kamil</div>
+    </a>
+    <!-- Repeat more cards here if needed -->
+  </div>
+  <div class="contact-section">
+    <h1 class="contact-heading">Contact Us</h1>
+    <div class="contact-links">
+      <a href="https://www.instagram.com/amed_berzinar/">Amed Abdullhameed</a>
+      <a href="https://www.instagram.com/ahmed_bibavay/">Ahmed Kamil</a>
     </div>
-  </body>
+  </div>
+</div>
+</body>
 </html>
